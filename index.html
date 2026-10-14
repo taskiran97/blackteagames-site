@@ -1,286 +1,365 @@
 <!doctype html>
-<html lang="en" data-lang="en">
+<html lang="en" data-lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BlackTea Games</title>
-<meta name="description" content="BlackTea Games is an independent game studio. TRUMPP VS ELON TYCOON is coming soon to Steam. Zero Gumbit is in development.">
-<meta property="og:title" content="BlackTea Games">
-<meta property="og:description" content="TRUMPP VS ELON TYCOON is coming soon to Steam. Wishlist now.">
-<meta property="og:image" content="https://blackteagames.com/assets/img/tve-key.webp">
+<meta name="description" content="BlackTea Games is an independent game studio. TRUMPP VS ELON TYCOON, a satirical idle tycoon set in Neo-Berlin 2157, is coming soon to Steam. Zero Gumbit is in development.">
+<meta property="og:title" content="TRUMPP VS ELON TYCOON · BlackTea Games">
+<meta property="og:description" content="Neo-Berlin, 2157. Build your vehicle empire from e-scooter to orbit. Coming soon to Steam, wishlist now.">
+<meta property="og:image" content="https://blackteagames.com/assets/img/og.jpg">
+<meta property="og:url" content="https://blackteagames.com/">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#140c09">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0a1a">
+<link rel="canonical" href="https://blackteagames.com/">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/anton.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.replace("no-js","js");</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"VideoGame","name":"TRUMPP VS ELON TYCOON","gamePlatform":"PC","operatingSystem":"Windows","applicationCategory":"Game","genre":["Idle","Tycoon","Strategy","Simulation"],"author":{"@type":"Organization","name":"BlackTea Games","url":"https://blackteagames.com"},"url":"https://store.steampowered.com/app/4784590/"}
+</script>
 </head>
 <body>
 
+<!-- intro: the studio's tea glass fills while the page loads -->
+<div class="intro" aria-hidden="true">
+  <svg viewBox="0 0 40 48" class="intro-glass">
+    <defs><clipPath id="introClip"><path d="M9 13 C11 18 13 20 15 22 C17 25 15 28 13 32 C11 36 11 40 12 43 H28 C29 40 29 36 27 32 C25 28 23 25 25 22 C27 20 29 18 31 13 Z"/></clipPath></defs>
+    <path d="M7 6 C9 16 12 19 14 22 C16 25 14 28 12 32 C10 36 10 40 11 44 H29 C30 40 30 36 28 32 C26 28 24 25 26 22 C28 19 31 16 33 6 Z" fill="none" stroke="#f2e6d8" stroke-width="1.2"/>
+    <rect class="intro-tea" x="0" y="13" width="40" height="32" fill="#c4561f" clip-path="url(#introClip)"/>
+    <path d="M4 46 H36" stroke="#f2e6d8" stroke-width="1.6" stroke-linecap="round"/>
+  </svg>
+  <p class="intro-name">BLACKTEA GAMES</p>
+</div>
+
 <a class="skip" href="#main" data-de="Zum Inhalt springen">Skip to content</a>
 
-<header class="nav" id="top">
+<header class="nav">
   <a class="brand" href="#top" aria-label="BlackTea Games">
     <svg class="brand-mark" viewBox="0 0 40 48" aria-hidden="true"><use href="#glass"/></svg>
     <span>BlackTea<b>Games</b></span>
   </a>
-  <nav aria-label="Main">
-    <a href="#trumpp" data-de="Tycoon">Tycoon</a>
+  <nav class="nav-links" aria-label="Main">
+    <a href="#teaser" data-de="Trailer">Trailer</a>
+    <a href="#epochs" data-de="Spiel">The game</a>
     <a href="#zero-gumbit">Zero Gumbit</a>
     <a href="#studio">Studio</a>
-    <a href="#contact" data-de="Kontakt">Contact</a>
+    <a href="#press" data-de="Presse">Press</a>
   </nav>
   <button class="lang" type="button" aria-label="Sprache wechseln / switch language">
     <span data-l="en">EN</span><span data-l="de">DE</span>
   </button>
+  <a class="nav-wish" href="https://store.steampowered.com/app/4784590/TRUMPP_VS_ELON_TYCOON/" target="_blank" rel="noopener" data-de="Wunschliste">Wishlist</a>
 </header>
 
 <main id="main">
 
-<!-- ============ STUDIO HERO ============ -->
-<section class="hero">
-  <div class="hero-copy">
-    <p class="eyebrow" data-de="Unabhängiges Spielestudio">Independent game studio</p>
-    <h1 data-de-html="Spiele, stark<br>aufgebrüht.">Games, brewed<br>strong.</h1>
-    <p class="lede" data-de="Wir machen Spiele mit Biss: laute Satire, böse Wirtschaft, Karten, die man nicht mehr weglegt. Zwei Titel stehen gerade auf dem Tisch.">We make games with a bite: loud satire, ruthless economies, cards you can't put down. Two titles are on the table right now.</p>
-
-    <ul class="menu-card" aria-label="Our games">
-      <li>
-        <a href="#trumpp">
-          <span class="mc-name">TRUMPP VS ELON TYCOON</span>
-          <span class="mc-dots" aria-hidden="true"></span>
-          <span class="mc-state hot" data-de="Bald auf Steam">Coming soon · Steam</span>
-        </a>
-      </li>
-      <li>
-        <a href="#zero-gumbit">
-          <span class="mc-name">ZERO GUMBIT</span>
-          <span class="mc-dots" aria-hidden="true"></span>
-          <span class="mc-state" data-de="Zieht noch">Still steeping</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="hero-glass" aria-hidden="true">
-    <svg viewBox="0 0 220 340" class="tea">
-      <defs>
-        <clipPath id="glassClip"><path d="M40 70 C40 70 52 140 70 170 C82 190 82 205 70 230 C55 262 52 290 60 318 L160 318 C168 290 165 262 150 230 C138 205 138 190 150 170 C168 140 180 70 180 70 Z"/></clipPath>
-        <linearGradient id="teaFill" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stop-color="#e2862f"/>
-          <stop offset=".55" stop-color="#a8401c"/>
-          <stop offset="1" stop-color="#5a1a0c"/>
-        </linearGradient>
-        <linearGradient id="shine" x1="0" x2="1">
-          <stop offset="0" stop-color="#fff" stop-opacity="0"/>
-          <stop offset=".5" stop-color="#fff" stop-opacity=".35"/>
-          <stop offset="1" stop-color="#fff" stop-opacity="0"/>
-        </linearGradient>
-      </defs>
-      <g class="steam">
-        <path d="M88 58 C78 40 98 30 88 10"/>
-        <path d="M110 60 C100 38 122 26 110 2"/>
-        <path d="M132 58 C122 40 142 30 132 12"/>
-      </g>
-      <g clip-path="url(#glassClip)">
-        <rect class="tea-liquid" x="30" y="92" width="160" height="240" fill="url(#teaFill)"/>
-        <path class="tea-surface" d="M30 92 Q70 86 110 92 T190 92 V100 H30Z" fill="#f0a24b" opacity=".55"/>
-      </g>
-      <path class="glass-edge" d="M40 70 C40 70 52 140 70 170 C82 190 82 205 70 230 C55 262 52 290 60 318 L160 318 C168 290 165 262 150 230 C138 205 138 190 150 170 C168 140 180 70 180 70"/>
-      <path d="M58 92 C64 130 72 152 82 170" stroke="url(#shine)" stroke-width="6" fill="none" stroke-linecap="round" opacity=".6"/>
-      <ellipse cx="110" cy="70" rx="70" ry="7" class="glass-rim"/>
-      <ellipse cx="110" cy="328" rx="78" ry="9" class="saucer"/>
-      <path d="M32 328 Q110 348 188 328" class="saucer-edge"/>
-    </svg>
-  </div>
-</section>
-
-<!-- ============ TRUMPP VS ELON TYCOON ============ -->
-<section class="tve" id="trumpp" aria-labelledby="tve-title">
-  <div class="tve-key">
-    <img src="assets/img/tve-key.webp" alt="Caricatures of Trump and Elon facing off on a neon street in Neo-Berlin" width="1600" height="917">
-  </div>
-  <div class="tve-head wrap">
-    <p class="tag-line"><span class="pulse" aria-hidden="true"></span><span data-de="Demnächst auf Steam · Jetzt auf die Wunschliste">Coming soon to Steam · Wishlist now</span></p>
-    <h2 id="tve-title" class="sr-only">TRUMPP VS ELON TYCOON</h2>
-    <p class="tve-claim" data-de-html="Vom E-Scooter<br>zum Orbit.">From e-scooter<br>to orbit.</p>
-    <p class="tve-sub" data-de="Neo-Berlin, 2157. Die Welt brennt, und du baust kräftig mit. Ein Idle-Tycoon mit schwarzem Humor: Produziere Autos, Kriegsgerät und Raumschiffe, schalte deine Rivalen aus und steig vom Straßenhändler zum orbitalen Herrscher auf.">Neo-Berlin, 2157. The world is on fire, and you're building the matches. An idle tycoon with dark humor: produce cars, war machines and spaceships, crush your rivals and rise from street dealer to orbital overlord.</p>
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <video class="hero-video" src="assets/video/hero-loop.mp4" poster="assets/img/poster-hero.webp" autoplay muted loop playsinline aria-hidden="true"></video>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="hero-tag"><span class="pulse" aria-hidden="true"></span><span data-de="Bald auf Steam · BlackTea Games präsentiert">Coming soon to Steam · BlackTea Games presents</span></p>
+    <h1 class="hero-title" aria-label="TRUMPP VS ELON TYCOON">
+      <span class="ht-line">TRUMPP <em>VS</em> ELON</span>
+      <span class="ht-line ht-tycoon">TYCOON</span>
+    </h1>
+    <p class="hero-sub" data-de="Neo-Berlin, 2157. Die Welt brennt, und du baust kräftig mit. Vom E-Scooter bis zum Orbit: Bau das größte Fahrzeugimperium der Stadt.">Neo-Berlin, 2157. The world is on fire, and you're building the matches. From e-scooter to orbit: build the biggest vehicle empire in the city.</p>
     <div class="cta-row">
       <a class="btn btn-gold" href="https://store.steampowered.com/app/4784590/TRUMPP_VS_ELON_TYCOON/" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-9.96 9.04l5.35 2.21a2.83 2.83 0 0 1 1.6-.49h.16l2.38-3.45v-.05a3.77 3.77 0 1 1 3.77 3.77h-.09l-3.4 2.42v.13a2.83 2.83 0 0 1-5.62.48L2.3 14.5A10 10 0 1 0 12 2Zm-4.72 15.2-1.23-.5a2.13 2.13 0 1 0 1.17-2.92l1.27.53a1.57 1.57 0 1 1-1.21 2.9Zm9.08-7.43a2.51 2.51 0 1 0-2.51 2.51 2.51 2.51 0 0 0 2.51-2.51Zm-4.4 0a1.89 1.89 0 1 1 1.89 1.89 1.89 1.89 0 0 1-1.89-1.89Z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#steam"/></svg>
         <span data-de="Auf Steam merken">Wishlist on Steam</span>
       </a>
-      <a class="btn btn-ghost" href="#tve-media" data-de="Gameplay ansehen">See gameplay</a>
+      <button class="btn btn-glass" type="button" data-play-trailer>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg>
+        <span data-de="Teaser ansehen">Watch teaser</span>
+      </button>
     </div>
   </div>
+  <a class="scroll-hint" href="#teaser" aria-label="Scroll down"><span></span></a>
+</section>
 
-  <!-- epochs: a real sequence, so numbered -->
-  <div class="epochs wrap" aria-label="Three epochs">
-    <article class="epoch">
-      <span class="ep-no">I</span>
-      <h3 data-de="Automobil">Automotive</h3>
-      <p data-de="E-Scooter, Quads, Pickups, Sportwagen. Klein anfangen, die Straßen von Neo-Berlin übernehmen.">E-scooters, quads, pickups, sports cars. Start small and take over the streets of Neo-Berlin.</p>
+<!-- the game's own news ticker -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>NEO-BERLIN 2157</span><span>MEGACORP AG MELDET 97 % MARKTANTEIL</span><span>WETTERWARNUNG: SÄUREREGEN IN ZONE OST</span><span>POLIZEIBERICHT: RIVAL-KONVOIS AUF AUTOBAHN NORD</span><span>VCT-MANUFAKTUR WIDERSTEHT ÜBERNAHME</span><span>SCHWARZES MANNA: VERBOTEN. WIRKSAM. GESICHERT.</span><span>ARBEITERSTREIK IN SEKTOR 7</span><span>STADTRAT: FAHRZEUGVERSORGUNG DURCH VCT SICHERT 50.000 ARBEITSPLÄTZE</span>
+    <span>NEO-BERLIN 2157</span><span>MEGACORP AG MELDET 97 % MARKTANTEIL</span><span>WETTERWARNUNG: SÄUREREGEN IN ZONE OST</span><span>POLIZEIBERICHT: RIVAL-KONVOIS AUF AUTOBAHN NORD</span><span>VCT-MANUFAKTUR WIDERSTEHT ÜBERNAHME</span><span>SCHWARZES MANNA: VERBOTEN. WIRKSAM. GESICHERT.</span><span>ARBEITERSTREIK IN SEKTOR 7</span><span>STADTRAT: FAHRZEUGVERSORGUNG DURCH VCT SICHERT 50.000 ARBEITSPLÄTZE</span>
+  </div>
+</div>
+
+<!-- ================= TEASER ================= -->
+<section class="teaser wrap" id="teaser" aria-labelledby="teaser-title">
+  <div class="sec-head">
+    <p class="kicker" data-de="Teaser-Trailer">Teaser trailer</p>
+    <h2 id="teaser-title" class="sec-title" data-de="Wer kontrolliert die Welt?">Who controls the world?</h2>
+  </div>
+  <button class="teaser-frame" type="button" data-play-trailer aria-label="Play teaser trailer">
+    <img src="assets/img/tve-key.webp" alt="" width="1600" height="917">
+    <span class="play-ring" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z"/></svg></span>
+    <span class="teaser-len">0:53</span>
+  </button>
+</section>
+
+<!-- ================= EPOCHS (pinned) ================= -->
+<section class="epochs" id="epochs" aria-labelledby="epochs-title">
+  <h2 id="epochs-title" class="sr-only" data-de="Drei Epochen">Three epochs</h2>
+  <div class="ep-stage">
+    <article class="ep is-active" data-ep="0">
+      <video src="assets/video/tve-phase1.mp4" poster="assets/img/poster-phase1.webp" muted loop playsinline preload="none" aria-hidden="true"></video>
+      <div class="ep-copy">
+        <p class="ep-count"><span data-de="Epoche">Epoch</span> I / III</p>
+        <h3 data-de="Automobil">Automotive</h3>
+        <p data-de="Ein E-Scooter, eine Halle, ein Traum. Bau Quads, Pickups, Sportwagen und Stadtbusse und übernimm die Straßen von Neo-Berlin.">One e-scooter, one garage, one dream. Build quads, pickups, sports cars and city buses and take over the streets of Neo-Berlin.</p>
+      </div>
     </article>
-    <article class="epoch">
-      <span class="ep-no">II</span>
-      <h3 data-de="Militär">Military</h3>
-      <p data-de="Wenn Geschäft zu Krieg wird: Panzer, Kampfdrohnen, Jets. Die Stadt gehört dir, notfalls mit Gewalt.">When business turns into war: tanks, combat drones, jets. The city is yours, by force if needed.</p>
+    <article class="ep" data-ep="1">
+      <video src="assets/video/tve-phase2.mp4" poster="assets/img/poster-phase2.webp" muted loop playsinline preload="none" aria-hidden="true"></video>
+      <div class="ep-copy">
+        <p class="ep-count"><span data-de="Epoche">Epoch</span> II / III</p>
+        <h3 data-de="Militär">Military</h3>
+        <p data-de="Wenn Geschäft zu Krieg wird: gepanzerte APCs, Kampfdrohnen, Hubschrauber und Tarnkappenjets. Die Stadt gehört dir, notfalls mit Gewalt.">When business turns into war: armored APCs, combat drones, gunships and stealth jets. The city is yours, by force if needed.</p>
+      </div>
     </article>
-    <article class="epoch">
-      <span class="ep-no">III</span>
-      <h3 data-de="Orbital">Orbital</h3>
-      <p data-de="Raumschiffe, Mondbasen, Mars-Kolonieschiffe. Die letzte Grenze gehört dem, der sie zuerst baut.">Spaceships, moon bases, Mars colony ships. The final frontier belongs to whoever builds it first.</p>
+    <article class="ep" data-ep="2">
+      <video src="assets/video/tve-phase3.mp4" poster="assets/img/poster-phase3.webp" muted loop playsinline preload="none" aria-hidden="true"></video>
+      <div class="ep-copy">
+        <p class="ep-count"><span data-de="Epoche">Epoch</span> III / III</p>
+        <h3 data-de="Orbital">Orbital</h3>
+        <p data-de="Mond-Rover, Asteroiden-Bohrer, Mars-Kolonieschiffe. Die letzte Grenze gehört dem, der sie zuerst baut.">Moon rovers, asteroid drills, Mars colony ships. The final frontier belongs to whoever builds it first.</p>
+      </div>
     </article>
-    <video class="epoch-video" src="assets/video/tve-epochs.mp4" poster="assets/img/poster-epochs.webp" muted loop playsinline preload="none" aria-hidden="true"></video>
-  </div>
-
-  <!-- ledger: the game's own HUD vocabulary -->
-  <div class="ledger wrap" aria-label="What's in the game">
-    <div class="ledger-bar"><span>VCT // NEO-BERLIN 2157</span><span data-de="KASSENBUCH">LEDGER</span></div>
-    <dl>
-      <div><dt data-de="Fahrzeuge">Vehicles</dt><dd>14</dd></div>
-      <div><dt data-de="Automatisierungsstufen">Automation tiers</dt><dd>5</dd></div>
-      <div><dt data-de="Minispiele">Minigames</dt><dd>3</dd></div>
-      <div><dt data-de="Prestige-Ränge">Prestige ranks</dt><dd>5</dd></div>
-      <div><dt data-de="Perks &amp; Forschung">Perks &amp; research</dt><dd>18+</dd></div>
-    </dl>
-    <ul class="ledger-notes">
-      <li data-de="Marktwellen, Arbeiterstreiks und Rivalen, die dein Imperium sabotieren">Market waves, worker strikes and rivals sabotaging your empire</li>
-      <li data-de="Lieferkette, Qualitätskontrolle, Manna-Reaktor">Supply Chain, Quality Control, Manna Reactor</li>
-      <li data-de="Die Fabriken laufen weiter, auch wenn du weg bist">Factories keep running while you're away</li>
-    </ul>
-  </div>
-
-  <!-- media -->
-  <div class="media wrap" id="tve-media">
-    <h3 class="media-title" data-de="Aus der Fabrik">From the factory floor</h3>
-    <div class="media-grid">
-      <figure class="m m-wide">
-        <video src="assets/video/tve-gameplay.mp4" poster="assets/img/poster-gameplay.webp" muted loop playsinline preload="none"></video>
-        <figcaption data-de="Kontrakte, Produktion, Finanzen">Contracts, production, finances</figcaption>
-      </figure>
-      <figure class="m">
-        <button class="zoom" type="button" data-full="assets/img/tve-shot-1.webp" aria-label="Enlarge screenshot"><img src="assets/img/tve-shot-1.webp" alt="Market wave event: all prices x10 for 30 seconds" loading="lazy" width="1920" height="1080"></button>
-        <figcaption data-de="Marktwelle: alle Preise ×10">Market wave: all prices ×10</figcaption>
-      </figure>
-      <figure class="m">
-        <video src="assets/video/tve-vehicles.mp4" poster="assets/img/poster-vehicles.webp" muted loop playsinline preload="none"></video>
-        <figcaption data-de="Vom Scooter zum Panzer">From scooter to tank</figcaption>
-      </figure>
-      <figure class="m">
-        <button class="zoom" type="button" data-full="assets/img/tve-strike.webp" aria-label="Enlarge screenshot"><img src="assets/img/tve-strike.webp" alt="Worker strike event in the middle of production" loading="lazy" width="1170" height="658"></button>
-        <figcaption data-de="Arbeiterstreik!">Worker strike!</figcaption>
-      </figure>
-      <figure class="m">
-        <video src="assets/video/tve-rivals.mp4" poster="assets/img/poster-rivals.webp" muted loop playsinline preload="none"></video>
-        <figcaption data-de="Wer kontrolliert die Welt?">Who controls the world?</figcaption>
-      </figure>
-      <figure class="m">
-        <button class="zoom" type="button" data-full="assets/img/tve-milestone.webp" aria-label="Enlarge screenshot"><img src="assets/img/tve-milestone.webp" alt="Milestone reached: one hundred e-scooters built" loading="lazy" width="1170" height="658"></button>
-        <figcaption data-de="Meilenstein freigeschaltet">Milestone unlocked</figcaption>
-      </figure>
-    </div>
-  </div>
-
-  <div class="specs wrap">
-    <div>
-      <h4 data-de="Genre">Genre</h4>
-      <p data-de="Idle-Tycoon · Strategie · Simulation · Schwarzer Humor">Idle tycoon · Strategy · Simulation · Dark humor</p>
-    </div>
-    <div>
-      <h4 data-de="Sprachen">Languages</h4>
-      <p data-de="Deutsch, Englisch, Französisch, Spanisch (ES/LatAm), Portugiesisch">English, German, French, Spanish (ES/LatAm), Portuguese</p>
-    </div>
-    <div>
-      <h4 data-de="Plattform">Platform</h4>
-      <p>Windows 10/11 · 64-bit · Steam</p>
-    </div>
-    <div>
-      <h4 data-de="Mindestens">Minimum</h4>
-      <p>Core i3 / Ryzen 3 · 4 GB RAM · DX11, 1 GB VRAM · 1 GB</p>
-    </div>
-  </div>
-
-  <div class="tve-band">
-    <img src="assets/img/tve-city.webp" alt="" loading="lazy" width="2400" height="775">
-    <div class="band-copy">
-      <p data-de="Wie lange kannst du Neo-Berlin beherrschen?">How long can you rule Neo-Berlin?</p>
-      <a class="btn btn-gold" href="https://store.steampowered.com/app/4784590/TRUMPP_VS_ELON_TYCOON/" target="_blank" rel="noopener" data-de="Jetzt auf die Wunschliste">Add to your wishlist</a>
-    </div>
+    <div class="ep-progress" aria-hidden="true"><span></span><span></span><span></span></div>
   </div>
 </section>
 
-<!-- ============ ZERO GUMBIT TEASER ============ -->
+<!-- ================= INSIDE THE FACTORY ================= -->
+<section class="factory wrap" id="factory" aria-labelledby="factory-title">
+  <div class="sec-head">
+    <p class="kicker" data-de="Im Spiel">In the game</p>
+    <h2 id="factory-title" class="sec-title" data-de="Deine Fabrik. Deine Regeln.">Your factory. Your rules.</h2>
+  </div>
+
+  <div class="showcase">
+    <div class="sc-tabs" role="tablist" aria-label="Game systems">
+      <button role="tab" aria-selected="true" aria-controls="sc-panel" data-shot="assets/img/tve-game-prod.webp" data-cap-en="Click to build, automate to scale. 3D models for every vehicle." data-cap-de="Per Klick bauen, per Automatisierung skalieren. 3D-Modelle für jedes Fahrzeug.">
+        <span class="sc-k" data-de="Produktion">Production</span>
+        <span class="sc-d" data-de="Bauen, verkaufen, automatisieren">Build, sell, automate</span>
+      </button>
+      <button role="tab" aria-selected="false" aria-controls="sc-panel" data-shot="assets/img/tve-game-kontrakte.webp" data-cap-en="Blitz orders, night shifts, megadeals: contracts pay the real money." data-cap-de="Blitz-Aufträge, Nachtschichten, Megadeals: Kontrakte bringen das echte Geld.">
+        <span class="sc-k" data-de="Kontrakte">Contracts</span>
+        <span class="sc-d" data-de="Aufträge mit Zeitdruck">Orders under pressure</span>
+      </button>
+      <button role="tab" aria-selected="false" aria-controls="sc-panel" data-shot="assets/img/tve-game-forschung.webp" data-cap-en="Research production, purchasing, analysis, convoys and orbital tech." data-cap-de="Erforsche Produktion, Einkauf, Analyse, Konvois und Orbital-Technik.">
+        <span class="sc-k" data-de="Forschung">Research</span>
+        <span class="sc-d" data-de="Fünf Forschungszweige">Five research branches</span>
+      </button>
+      <button role="tab" aria-selected="false" aria-controls="sc-panel" data-shot="assets/img/tve-game-perks.webp" data-cap-en="Scrapyard King, PR Guru, Industrial Spy: perks shape how you play." data-cap-de="Schrottplatz-König, PR-Guru, Industriespionin: Perks bestimmen deinen Spielstil.">
+        <span class="sc-k" data-de="Perks">Perks</span>
+        <span class="sc-d" data-de="18+ Spielstile">18+ ways to play</span>
+      </button>
+    </div>
+    <figure class="sc-screen" id="sc-panel" role="tabpanel">
+      <div class="sc-bezel">
+        <img src="assets/img/tve-game-prod.webp" alt="TRUMPP VS ELON TYCOON in-game screenshot" width="1920" height="1080">
+      </div>
+      <figcaption>Click to build, automate to scale. 3D models for every vehicle.</figcaption>
+    </figure>
+  </div>
+
+  <div class="ledger">
+    <div class="ledger-bar"><span>VCT // NEO-BERLIN 2157</span><span data-de="KASSENBUCH">LEDGER</span></div>
+    <dl>
+      <div><dt data-de="Fahrzeuge">Vehicles</dt><dd data-count="14">14</dd></div>
+      <div><dt data-de="Epochen">Epochs</dt><dd data-count="3">3</dd></div>
+      <div><dt data-de="Automatisierungsstufen">Automation tiers</dt><dd data-count="5">5</dd></div>
+      <div><dt data-de="Minispiele">Minigames</dt><dd data-count="3">3</dd></div>
+      <div><dt data-de="Prestige-Ränge">Prestige ranks</dt><dd data-count="5">5</dd></div>
+      <div><dt data-de="Perks &amp; Forschung">Perks &amp; research</dt><dd data-count="18" data-suffix="+">18+</dd></div>
+    </dl>
+  </div>
+
+  <div class="features">
+    <article>
+      <h3 data-de="Läuft auch ohne dich">Runs without you</h3>
+      <p data-de="Schalte die globale Automatisierung frei. Deine Fabriken produzieren weiter, auch wenn du weg bist.">Unlock global automation. Your factories keep producing while you're away.</p>
+    </article>
+    <article>
+      <h3 data-de="Die Stadt schlägt zurück">The city fights back</h3>
+      <p data-de="Marktwellen, Arbeiterstreiks und Rivalen wie die MegaCorp AG wollen dein Imperium zerlegen.">Market waves, worker strikes and rivals like MegaCorp AG want your empire in pieces.</p>
+    </article>
+    <article>
+      <h3 data-de="Drei Minispiele">Three minigames</h3>
+      <p data-de="Lieferkette, Qualitätskontrolle und Manna-Reaktor: kurze Pausen vom Wachstum, die sich lohnen.">Supply Chain, Quality Control and Manna Reactor: quick breaks from growth that pay off.</p>
+    </article>
+    <article>
+      <h3 data-de="Prestige">Prestige</h3>
+      <p data-de="Setz zurück, bau neu, dominier härter. Jeder der fünf Ränge bringt dauerhafte Boni.">Reset, rebuild, dominate harder. Each of the five ranks brings permanent bonuses.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ================= CLIPS ================= -->
+<section class="clips wrap" aria-labelledby="clips-title">
+  <h2 id="clips-title" class="sec-title sec-title-sm" data-de="Aus der Fabrik">From the factory floor</h2>
+  <div class="clip-grid">
+    <figure class="clip clip-a"><video src="assets/video/tve-gameplay.mp4" poster="assets/img/poster-gameplay.webp" muted loop playsinline preload="none"></video><figcaption data-de="Kontrakte im Akkord">Contracts on the clock</figcaption></figure>
+    <figure class="clip"><video src="assets/video/tve-vehicles.mp4" poster="assets/img/poster-vehicles.webp" muted loop playsinline preload="none"></video><figcaption data-de="Vom Scooter zum Panzer">From scooter to tank</figcaption></figure>
+    <figure class="clip"><button class="zoom" type="button" data-full="assets/img/tve-shot-1.webp" aria-label="Enlarge screenshot"><img src="assets/img/tve-shot-1.webp" alt="Market wave event: all prices x10 for 30 seconds" loading="lazy" width="1920" height="1080"></button><figcaption data-de="Marktwelle: alle Preise ×10">Market wave: all prices ×10</figcaption></figure>
+    <figure class="clip"><button class="zoom" type="button" data-full="assets/img/tve-strike.webp" aria-label="Enlarge screenshot"><img src="assets/img/tve-strike.webp" alt="Worker strike event in the middle of production" loading="lazy" width="1170" height="658"></button><figcaption data-de="Arbeiterstreik!">Worker strike!</figcaption></figure>
+    <figure class="clip"><video src="assets/video/tve-rivals.mp4" poster="assets/img/poster-rivals.webp" muted loop playsinline preload="none"></video><figcaption data-de="Die Rivalen">The rivals</figcaption></figure>
+  </div>
+
+  <dl class="specs">
+    <div><dt data-de="Genre">Genre</dt><dd data-de="Idle-Tycoon · Strategie · Simulation · Schwarzer Humor">Idle tycoon · Strategy · Simulation · Dark humor</dd></div>
+    <div><dt data-de="Sprachen">Languages</dt><dd data-de="Deutsch, Englisch, Französisch, Spanisch (ES/LatAm), Portugiesisch">English, German, French, Spanish (ES/LatAm), Portuguese</dd></div>
+    <div><dt data-de="Plattform">Platform</dt><dd>Windows 10/11 · 64-bit · Steam</dd></div>
+    <div><dt data-de="Mindestens">Minimum</dt><dd>Core i3 / Ryzen 3 · 4 GB RAM · DX11 · 1 GB</dd></div>
+  </dl>
+</section>
+
+<section class="wish-band" aria-label="Wishlist">
+  <img src="assets/img/tve-city.webp" alt="" loading="lazy" width="2400" height="775">
+  <div class="wb-copy">
+    <p class="wb-line" data-de="Wie lange kannst du Neo-Berlin beherrschen?">How long can you rule Neo-Berlin?</p>
+    <a class="btn btn-gold btn-lg" href="https://store.steampowered.com/app/4784590/TRUMPP_VS_ELON_TYCOON/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#steam"/></svg>
+      <span data-de="Jetzt auf die Wunschliste">Add to your wishlist</span>
+    </a>
+    <p class="wb-note" data-de="Mit der Wunschliste bekommst du eine Nachricht von Steam, sobald das Spiel erscheint.">Wishlisting gets you a message from Steam the moment the game launches.</p>
+  </div>
+</section>
+
+<!-- ================= ZERO GUMBIT ================= -->
 <section class="zg" id="zero-gumbit" aria-labelledby="zg-title">
   <div class="zg-inner wrap">
     <div class="zg-copy">
-      <p class="zg-status"><span data-de="In Entwicklung">In development</span> · PC</p>
-      <h2 id="zg-title" class="zg-title">ZERO<br>GUMBIT</h2>
-      <p class="zg-lede" data-de="Ein Cyberpunk-Roguelike-Deckbuilder. Spiele Hände aus vier Farben, Loop, Chrome, Glitch und Sigma, stapele Chips und Multiplikatoren und brich durch acht Antes voller Boss-Blinds.">A cyberpunk roguelike deckbuilder. Play hands from four suits, Loop, Chrome, Glitch and Sigma, stack chips and multipliers, and break through eight antes of boss blinds.</p>
-      <p class="zg-small" data-de="Über 140 Joker. Kein Glücksspiel, keine Zinsen, nur Kombos.">140+ jokers. No gambling, no interest, just combos.</p>
-      <a class="btn btn-teal" href="#contact" data-de="Entwicklung verfolgen">Follow development</a>
+      <p class="zg-status"><span class="zg-dot" aria-hidden="true"></span><span data-de="Nächstes Projekt · In Entwicklung">Next project · In development</span></p>
+      <h2 id="zg-title" class="zg-title" data-text="ZERO GUMBIT">ZERO GUMBIT</h2>
+      <p class="zg-lede" data-de="Ein Cyberpunk-Roguelike-Deckbuilder. Spiel Hände aus vier Farben, Loop, Chrome, Glitch und Sigma, stapel Chips und Multiplikatoren und brich durch acht Antes voller Boss-Blinds.">A cyberpunk roguelike deckbuilder. Play hands from four suits, Loop, Chrome, Glitch and Sigma, stack chips and multipliers, and break through eight antes of boss blinds.</p>
+      <ul class="zg-facts">
+        <li><b>140+</b> <span data-de="Joker">jokers</span></li>
+        <li><b>4</b> <span data-de="Farben">suits</span></li>
+        <li><b>8</b> <span data-de="Antes">antes</span></li>
+      </ul>
+      <p class="zg-small" data-de="Kein Glücksspiel, keine Zinsen. Nur Kombos.">No gambling, no interest. Just combos.</p>
     </div>
 
-    <div class="fan" aria-label="Joker cards from Zero Gumbit">
-      <div class="card" style="--i:-2"><img src="assets/img/zg-joker-thunderclap.webp" alt="Joker: Thunderclap" loading="lazy" width="448" height="537"></div>
-      <div class="card" style="--i:-1"><img src="assets/img/zg-joker-kaleidoscope.webp" alt="Joker: Kaleidoscope" loading="lazy" width="448" height="537"></div>
-      <div class="card back" style="--i:0"><span>?</span></div>
-      <div class="card" style="--i:1"><img src="assets/img/zg-joker-loose-wire.webp" alt="Joker: Loose Wire" loading="lazy" width="448" height="537"></div>
-      <div class="card" style="--i:2"><img src="assets/img/zg-joker-bullet-train.webp" alt="Joker: Bullet Train" loading="lazy" width="448" height="537"></div>
+    <div class="deck" aria-label="Joker cards from Zero Gumbit">
+      <div class="holo" style="--i:-2"><div class="holo-in"><img src="assets/img/zg-joker-thunderclap.webp" alt="Joker: Thunderclap" loading="lazy" width="448" height="537"><i class="glare"></i></div></div>
+      <div class="holo" style="--i:-1"><div class="holo-in"><img src="assets/img/zg-joker-kaleidoscope.webp" alt="Joker: Kaleidoscope" loading="lazy" width="448" height="537"><i class="glare"></i></div></div>
+      <div class="holo back" style="--i:0"><div class="holo-in"><span>?</span><i class="glare"></i></div></div>
+      <div class="holo" style="--i:1"><div class="holo-in"><img src="assets/img/zg-joker-loose-wire.webp" alt="Joker: Loose Wire" loading="lazy" width="448" height="537"><i class="glare"></i></div></div>
+      <div class="holo" style="--i:2"><div class="holo-in"><img src="assets/img/zg-joker-bullet-train.webp" alt="Joker: Bullet Train" loading="lazy" width="448" height="537"><i class="glare"></i></div></div>
     </div>
   </div>
-
   <figure class="zg-shot wrap">
-    <img src="assets/img/zg-hand.webp" alt="A fanned hand of Zero Gumbit playing cards in the Loop, Chrome, Glitch and Sigma suits" loading="lazy" width="1060" height="333">
+    <img src="assets/img/zg-hand.webp" alt="A hand of Zero Gumbit playing cards in the Loop, Chrome, Glitch and Sigma suits" loading="lazy" width="1060" height="333">
     <figcaption data-de="Frühe Entwicklungsversion. Alles kann sich noch ändern.">Early build. Everything is subject to change.</figcaption>
   </figure>
 </section>
 
-<!-- ============ STUDIO ============ -->
+<!-- ================= STUDIO ================= -->
 <section class="studio wrap" id="studio" aria-labelledby="studio-title">
-  <h2 id="studio-title" data-de="Das Studio">The studio</h2>
-  <div class="studio-body">
-    <p data-de="BlackTea Games ist ein kleines, unabhängiges Studio. Wir bauen die Spiele, die wir selbst spielen wollen: welche, bei denen eine Runde nie reicht.">BlackTea Games is a small, independent studio. We build the games we want to play ourselves: the kind where one more round is never enough.</p>
-    <p data-de="Unser Name kommt vom Tee, der bei jeder Session neben der Tastatur steht. Stark, schwarz, und meistens schon kalt, wenn der Build endlich läuft.">The name comes from the tea next to the keyboard at every session. Strong, black, and usually cold by the time the build finally compiles.</p>
+  <div class="studio-glass" aria-hidden="true">
+    <svg viewBox="0 0 220 340">
+      <defs>
+        <clipPath id="glassClip"><path d="M40 70 C40 70 52 140 70 170 C82 190 82 205 70 230 C55 262 52 290 60 318 L160 318 C168 290 165 262 150 230 C138 205 138 190 150 170 C168 140 180 70 180 70 Z"/></clipPath>
+        <linearGradient id="teaFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2862f"/><stop offset=".55" stop-color="#a8401c"/><stop offset="1" stop-color="#5a1a0c"/></linearGradient>
+      </defs>
+      <g class="steam"><path d="M88 58 C78 40 98 30 88 10"/><path d="M110 60 C100 38 122 26 110 2"/><path d="M132 58 C122 40 142 30 132 12"/></g>
+      <g clip-path="url(#glassClip)"><rect class="tea-liquid" x="30" y="92" width="160" height="240" fill="url(#teaFill)"/></g>
+      <path class="glass-edge" d="M40 70 C40 70 52 140 70 170 C82 190 82 205 70 230 C55 262 52 290 60 318 L160 318 C168 290 165 262 150 230 C138 205 138 190 150 170 C168 140 180 70 180 70"/>
+      <ellipse cx="110" cy="70" rx="70" ry="7" class="glass-rim"/>
+      <ellipse cx="110" cy="328" rx="78" ry="9" class="saucer"/>
+    </svg>
+  </div>
+  <div class="studio-copy">
+    <p class="kicker" data-de="Das Studio">The studio</p>
+    <h2 id="studio-title" class="studio-title" data-de-html="Spiele, stark<br>aufgebrüht.">Games, brewed<br>strong.</h2>
+    <p data-de="BlackTea Games ist ein kleines, unabhängiges Studio. Wir machen Spiele mit Biss: laute Satire, gnadenlose Wirtschaft, Karten, die man nicht mehr weglegt. Spiele, bei denen eine Runde nie reicht.">BlackTea Games is a small, independent studio. We make games with a bite: loud satire, ruthless economies, cards you can't put down. Games where one more round is never enough.</p>
+    <p class="studio-dim" data-de="Der Name kommt vom Tee, der bei jeder Session neben der Tastatur steht. Stark, schwarz und meistens schon kalt, wenn der Build endlich läuft.">The name comes from the tea next to the keyboard at every session. Strong, black, and usually cold by the time the build finally compiles.</p>
+    <ul class="menu-card" aria-label="Our games">
+      <li><a href="#top"><span class="mc-name">TRUMPP VS ELON TYCOON</span><span class="mc-dots" aria-hidden="true"></span><span class="mc-state hot" data-de="Bald auf Steam">Coming soon · Steam</span></a></li>
+      <li><a href="#zero-gumbit"><span class="mc-name">ZERO GUMBIT</span><span class="mc-dots" aria-hidden="true"></span><span class="mc-state" data-de="Zieht noch">Still steeping</span></a></li>
+    </ul>
   </div>
 </section>
 
-<!-- ============ CONTACT ============ -->
-<section class="contact wrap" id="contact" aria-labelledby="contact-title">
-  <h2 id="contact-title" data-de="Sag Hallo">Say hello</h2>
-  <p data-de="Presse, Creator, Feedback oder einfach eine Frage: schreib uns.">Press, creators, feedback or just a question: write to us.</p>
-  <a class="mail" href="mailto:contact@blackteagames.com">contact@blackteagames.com</a>
-  <ul class="socials">
-    <li><a href="https://x.com/blackteagames" target="_blank" rel="noopener">X</a></li>
-    <li><a href="https://www.tiktok.com/@blackteagames" target="_blank" rel="noopener">TikTok</a></li>
-    <li><a href="https://www.youtube.com/channel/UC4cSD2vB2pgtEg7nCbl8A-g" target="_blank" rel="noopener">YouTube</a></li>
-    <li><a href="https://store.steampowered.com/app/4784590/TRUMPP_VS_ELON_TYCOON/" target="_blank" rel="noopener">Steam</a></li>
-  </ul>
+<!-- ================= PRESS + CONTACT ================= -->
+<section class="press wrap" id="press" aria-labelledby="press-title">
+  <div class="press-card">
+    <img src="assets/img/tve-vertical.webp" alt="" loading="lazy" width="748" height="896">
+    <div>
+      <p class="kicker" data-de="Presse &amp; Creator">Press &amp; creators</p>
+      <h2 id="press-title" class="sec-title sec-title-sm" data-de="Presse-Kit">Press kit</h2>
+      <p data-de="Keyart, Capsules, Logo, Full-HD-Screenshots, Teaser-Trailer und Factsheet. Frei verwendbar für Berichte, Videos und Streams über das Spiel.">Key art, capsules, logo, full HD screenshots, teaser trailer and fact sheet. Free to use for coverage, videos and streams about the game.</p>
+      <a class="btn btn-ghost" href="assets/presskit/TRUMPP_VS_ELON_TYCOON_Presskit.zip" download>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 3h2v10.2l3.6-3.6 1.4 1.4-6 6-6-6 1.4-1.4 3.6 3.6zM4 19h16v2H4z"/></svg>
+        <span data-de="Presse-Kit laden (ZIP, 24 MB)">Download press kit (ZIP, 24 MB)</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="contact" id="contact">
+    <p class="kicker" data-de="Kontakt">Contact</p>
+    <h2 class="sec-title sec-title-sm" data-de="Sag Hallo">Say hello</h2>
+    <p data-de="Presse, Creator-Keys, Feedback oder einfach eine Frage: schreib uns.">Press, creator keys, feedback or just a question: write to us.</p>
+    <a class="mail" href="mailto:contact@blackteagames.com">contact@blackteagames.com</a>
+    <ul class="socials">
+      <li><a href="https://x.com/blackteagames" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.3L5.3 21H2.2l7.2-8.3L1.8 3h6.4l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z"/></svg>X</a></li>
+      <li><a href="https://www.tiktok.com/@blackteagames" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 2h-3.3v13.4a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.2a6.2 6.2 0 1 0 5.3 6.2V8.6a7.9 7.9 0 0 0 4.4 1.4V6.7a4.5 4.5 0 0 1-4.4-4.7z"/></svg>TikTok</a></li>
+      <li><a href="https://www.youtube.com/channel/UC4cSD2vB2pgtEg7nCbl8A-g" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.1V8.9l5.8 3.1z"/></svg>YouTube</a></li>
+      <li><a href="https://store.steampowered.com/app/4784590/TRUMPP_VS_ELON_TYCOON/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#steam"/></svg>Steam</a></li>
+    </ul>
+  </div>
 </section>
 
 </main>
 
 <footer class="foot wrap">
-  <span>© 2026 BlackTea Games</span>
-  <span class="foot-note" data-de="Satire. Keine Verbindung zu realen Personen oder Unternehmen.">Satire. Not affiliated with any real person or company.</span>
+  <a class="brand" href="#top" aria-label="BlackTea Games">
+    <svg class="brand-mark" viewBox="0 0 40 48" aria-hidden="true"><use href="#glass"/></svg>
+    <span>BlackTea<b>Games</b></span>
+  </a>
+  <p class="foot-note" data-de="TRUMPP VS ELON TYCOON ist eine Satire. Die Figuren sind überzeichnete Karikaturen ohne Verbindung zu realen Personen oder Unternehmen.">TRUMPP VS ELON TYCOON is satire. The characters are exaggerated caricatures, not affiliated with any real person or company.</p>
   <nav aria-label="Legal">
     <a href="impressum.html">Impressum</a>
     <a href="datenschutz.html" data-de="Datenschutz">Privacy</a>
   </nav>
+  <span class="foot-copy">© 2026 BlackTea Games</span>
 </footer>
 
-<div class="lightbox" hidden>
-  <button type="button" class="lb-close" aria-label="Close">×</button>
+<!-- trailer modal -->
+<div class="modal" id="trailer" hidden role="dialog" aria-modal="true" aria-label="Teaser trailer">
+  <div class="modal-box">
+    <button type="button" class="modal-close" aria-label="Close">×</button>
+    <video src="assets/video/tve-teaser.mp4" poster="assets/img/poster-trailer.jpg" controls playsinline preload="none"></video>
+  </div>
+</div>
+
+<!-- screenshot lightbox -->
+<div class="modal lightbox" hidden role="dialog" aria-modal="true" aria-label="Screenshot">
+  <button type="button" class="modal-close" aria-label="Close">×</button>
   <img alt="">
 </div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="glass" viewBox="0 0 40 48">
     <path d="M7 6 C9 16 12 19 14 22 C16 25 14 28 12 32 C10 36 10 40 11 44 H29 C30 40 30 36 28 32 C26 28 24 25 26 22 C28 19 31 16 33 6 Z" fill="currentColor"/>
-    <path d="M9 13 C11 18 13 20 15 22 C17 25 15 28 13 32 C11 36 11 40 12 43 H28 C29 40 29 36 27 32 C25 28 23 25 25 22 C27 20 29 18 31 13 Z" fill="var(--tea)"/>
+    <path d="M9 13 C11 18 13 20 15 22 C17 25 15 28 13 32 C11 36 11 40 12 43 H28 C29 40 29 36 27 32 C25 28 23 25 25 22 C27 20 29 18 31 13 Z" fill="#c4561f"/>
     <path d="M4 46 H36" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="steam" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M12 2a10 10 0 0 0-9.960 9.04l5.35 2.21a2.83 2.83 0 0 1 1.6-.49h.16l2.38-3.45v-.05a3.77 3.77 0 1 1 3.770 3.77h-.09l-3.4 2.42v.13a2.83 2.83 0 0 1-5.62.48L2.3 14.5A10 10 0 1 0 12 2Zm-4.72 15.2-1.23-.5a2.13 2.13 0 1 0 1.17-2.92l1.27.53a1.57 1.57 0 1 1-1.21 2.9Zm9.08-7.43a2.51 2.51 0 1 0-2.51 2.51 2.51 2.51 0 0 0 2.51-2.51Zm-4.4 0a1.89 1.89 0 1 1 1.89 1.89 1.89 1.89 0 0 1-1.89-1.89Z"/>
   </symbol>
 </svg>
 
+<script src="assets/vendor/gsap.min.js" defer></script>
+<script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/vendor/lenis.min.js" defer></script>
 <script src="js/main.js" defer></script>
 </body>
 </html>
