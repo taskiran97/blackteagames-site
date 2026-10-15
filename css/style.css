@@ -237,6 +237,9 @@ html[data-lang="en"] .lang [data-l="en"], html[data-lang="de"] .lang [data-l="de
 .wb-copy { position: absolute; inset: 0; z-index: 1; display: grid; place-content: center; justify-items: center; gap: 26px; text-align: center; padding: 0 var(--gutter); }
 .wb-line { font: 400 clamp(36px, 6vw, 84px)/.95 var(--poster); text-transform: uppercase; text-shadow: 0 4px 40px #000; max-width: 16ch; }
 .wb-note { font-size: 14px; color: var(--lilac); max-width: 44ch; }
+.wb-tiktok { display: inline-flex; align-items: center; gap: 10px; padding: 11px 18px; border: 1px solid #ffffff38; border-radius: 99px; background: #0b0a1a99; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); text-decoration: none; color: #fff; font: 500 13px/1 var(--mono); letter-spacing: .02em; white-space: nowrap; transition: border-color .2s, color .2s; }
+.wb-tiktok svg { width: 16px; height: 16px; fill: currentColor; }
+.wb-tiktok:hover { border-color: var(--gold); color: var(--gold); }
 
 /* ---------- zero gumbit ---------- */
 .zg {
