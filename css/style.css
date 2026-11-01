@@ -298,9 +298,26 @@ html[data-lang="en"] .lang [data-l="en"], html[data-lang="de"] .lang [data-l="de
 .holo.back .holo-in { display: grid; place-items: center; background: repeating-conic-gradient(from 45deg, #c4302b 0 25%, #a0221f 0 50%) 0 0 / 22px 22px; border-color: #fff; }
 .holo.back span { display: grid; place-items: center; width: 54%; aspect-ratio: 1; border-radius: 50%; background: #0d2a2c; border: 3px solid #fff; font: 700 clamp(36px, 4vw, 58px)/1 "Phudu", sans-serif; color: var(--cyan); }
 
-.zg-shot { position: relative; z-index: 1; margin-top: clamp(56px, 8vw, 100px); }
-.zg-shot img { width: 100%; aspect-ratio: 1060 / 333; object-fit: cover; border-radius: 10px; box-shadow: 0 30px 80px #0008; -webkit-mask-image: linear-gradient(180deg, #000 80%, transparent); mask-image: linear-gradient(180deg, #000 80%, transparent); }
-.zg-shot figcaption { margin-top: 6px; font: 500 12px/1 var(--mono); color: #7fbdb7; text-align: right; }
+.btn-cyan { background: var(--cyan); color: #04201e; box-shadow: 0 5px 0 #1f8f89, 0 12px 44px #48e0d844; }
+.btn-cyan:hover { transform: translateY(-2px); box-shadow: 0 7px 0 #1f8f89, 0 16px 56px #48e0d866; }
+.btn-cyan:active { transform: translateY(4px); box-shadow: 0 1px 0 #1f8f89; }
+.zg-cta { margin-top: 26px; }
+.zg-shots { position: relative; z-index: 1; margin-top: clamp(56px, 8vw, 100px); display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.zg-shots img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 10px; box-shadow: 0 30px 80px #0008, 0 0 0 1px #48e0d833; }
+.zg-shots figcaption { margin-top: 10px; font: 500 12px/1.4 var(--mono); color: #7fbdb7; }
+
+/* ---------- bundle + launch ---------- */
+.bundle { text-align: center; padding-top: clamp(90px, 11vw, 150px); }
+.bundle .kicker { color: var(--gold); }
+.bundle .sec-title { background: linear-gradient(90deg, var(--gold), #fff 50%, var(--cyan)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.bundle-lede { max-width: 60ch; margin: 22px auto 0; font-size: clamp(17px, 1.4vw, 19px); color: var(--lilac); }
+.countdown { display: flex; justify-content: center; gap: clamp(10px, 2vw, 22px); margin: 36px 0 44px; }
+.countdown div { min-width: clamp(68px, 9vw, 110px); padding: 16px 10px 12px; border: 1px solid #ffffff22; border-radius: 12px; background: #ffffff0a; }
+.countdown b { display: block; font: 700 clamp(34px, 4.6vw, 60px)/1 "Phudu", sans-serif; color: #fff; font-variant-numeric: tabular-nums; }
+.countdown span { font: 500 11px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--lilac-dim); }
+.bundle-art img { width: min(100%, 980px); margin: 0 auto; border-radius: 14px; box-shadow: 0 30px 90px #000a, 0 0 0 1px #ffcf3a44, 0 0 70px #b04bff33; }
+.bundle-cta { justify-content: center; margin-top: 34px; flex-wrap: wrap; }
+.bundle-note { margin-top: 18px; font-size: 14px; color: var(--lilac-dim); }
 
 /* ---------- studio (the tea world) ---------- */
 .studio {
@@ -393,6 +410,8 @@ html[data-lang="en"] .lang [data-l="en"], html[data-lang="de"] .lang [data-l="de
   .deck { margin-top: 10px; }
 }
 @media (max-width: 600px) {
+  .zg-shots { grid-template-columns: 1fr; }
+  .countdown div { min-width: 0; flex: 1; padding: 12px 4px 10px; }
   .nav { gap: 12px; }
   .brand span { display: none; }
   .hero-title em { font-size: .7em; }

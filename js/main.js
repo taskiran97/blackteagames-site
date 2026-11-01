@@ -267,4 +267,20 @@
     const open = $$(".modal").find((m) => !m.hidden);
     if (open) closeModal(open);
   });
+
+  /* ---------- launch countdown ---------- */
+  const cd = $(".countdown");
+  if (cd) {
+    const end = Date.parse(cd.dataset.launch);
+    const out = { d: $("[data-cd=d]", cd), h: $("[data-cd=h]", cd), m: $("[data-cd=m]", cd), s: $("[data-cd=s]", cd) };
+    const pad = (n) => String(n).padStart(2, "0");
+    const tick = () => {
+      let t = Math.max(0, Math.floor((end - Date.now()) / 1000));
+      out.d.textContent = Math.floor(t / 86400); t %= 86400;
+      out.h.textContent = pad(Math.floor(t / 3600)); t %= 3600;
+      out.m.textContent = pad(Math.floor(t / 60));
+      out.s.textContent = pad(t % 60);
+    };
+    tick(); setInterval(tick, 1000);
+  }
 })();
