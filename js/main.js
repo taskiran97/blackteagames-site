@@ -91,6 +91,7 @@
     heroDone = true;
     gsap.timeline({ defaults: { ease: "power4.out" } })
       .from(".hero-video", { scale: 1.15, duration: 2.4, ease: "power2.out" }, 0)
+      .from(".hero-new", { y: 16, autoAlpha: 0, duration: .8 }, .1)
       .from(".hero-tag", { y: 20, autoAlpha: 0, duration: .8 }, .2)
       .from(".ht-line", { yPercent: 110, autoAlpha: 0, duration: 1.2, stagger: .14 }, .3)
       .from(".hero-sub", { y: 24, autoAlpha: 0, duration: 1 }, .8)
@@ -108,7 +109,7 @@
       gsap.to(".hero-content", { yPercent: -25, autoAlpha: 0, ease: "none", scrollTrigger: { trigger: ".hero", start: "40% top", end: "bottom top", scrub: true } });
 
       /* generic reveals */
-      const reveal = $$(".sec-head, .teaser-frame, .showcase, .ledger, .features article, .clip, .specs, .wb-copy > *, .zg-copy > *, .zg-shot, .studio-copy > *, .press-card, .contact > *");
+      const reveal = $$(".sec-head, .teaser-frame, .showcase, .ledger, .features article, .clip, .specs, .wb-copy > *, .zg-copy > *, .zg-shot, .studio-copy > *, .press-card, .contact > *, .sid-copy > *, .sid-shot, .sid-features article, .sid-play");
       gsap.set(reveal, { y: 40, autoAlpha: 0 });
       ScrollTrigger.batch(reveal, {
         start: "top 88%",
@@ -136,6 +137,10 @@
 
       /* the studio's tea fills as you scroll */
       gsap.fromTo(".studio .tea-liquid", { y: 240 }, { y: 0, ease: "none", scrollTrigger: { trigger: ".studio", start: "top 85%", end: "center 55%", scrub: true } });
+
+      /* suck it dry: das Meer schwappt beim Scrollen leicht nach */
+      gsap.fromTo(".sid-banner-art", { yPercent: -6, scale: 1.08 }, { yPercent: 6, ease: "none", scrollTrigger: { trigger: ".sid-banner", start: "top bottom", end: "bottom top", scrub: true } });
+      gsap.from(".sid-title img", { y: 40, scale: .9, autoAlpha: 0, duration: 1.1, ease: "back.out(1.6)", scrollTrigger: { trigger: ".sid-banner", start: "top 70%" } });
 
       /* wishlist band parallax */
       gsap.fromTo(".wish-band img", { yPercent: -10, scale: 1.1 }, { yPercent: 10, ease: "none", scrollTrigger: { trigger: ".wish-band", start: "top bottom", end: "bottom top", scrub: true } });
