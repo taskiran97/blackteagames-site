@@ -531,3 +531,12 @@ html[data-lang="en"] .lang [data-l="en"], html[data-lang="de"] .lang [data-l="de
   .intro { display: none; }
   .ticker-track { animation: none; }
 }
+
+/* ---------- Suck It Dry! als Hero (21.11.2026) ---------- */
+.hero-title-img { line-height: 0; margin: 0; }
+.hero-title-img img { width: min(720px, 92vw); height: auto; filter: drop-shadow(0 10px 30px #000a); }
+.hero-sid .hero-shade { background: linear-gradient(180deg, #07060f66 0%, transparent 30%, #07060f33 55%, #07060fe6 100%); }
+.tve-head { padding: clamp(80px, 12vw, 150px) 0 clamp(20px, 4vw, 40px); }
+.tve-head .tve-title { font-size: clamp(46px, 8.5vw, 132px); }
+.tve-head .hero-sub { text-shadow: none; }
+@media (max-width: 600px) { .tve-head .tve-title { font-size: clamp(40px, 13vw, 70px); } }
